@@ -62,6 +62,16 @@ Configuration
 
         Whether to log activation events. Default is False.
 
+- Configure the email backend in your Django settings:
+
+    .. code-block:: python
+
+        EMAIL_HOST = 'smtp.example.com'
+        EMAIL_PORT = 587
+        EMAIL_USE_TLS = True
+        EMAIL_HOST_USER = ''
+        EMAIL_HOST_PASSWORD = ''
+
 - Templates
     - You can override the templates used by django-user-activation by creating your own templates in your project under the ``templates/user_activation`` directory.
     - The templates that can be overridden are:
@@ -90,7 +100,14 @@ Example Usage
 
 Testing
 -------
+To run the tests, clone the repository and install the requirements:
+
 .. code-block:: sh
 
     python -m pip install -r requirements.txt
+
+and then run:
+
+.. code-block:: sh
+
     python manage.py test
