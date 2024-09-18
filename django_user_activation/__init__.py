@@ -1,0 +1,1 @@
+from .activate import send_activation_email

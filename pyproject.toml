@@ -1,0 +1,42 @@
+[build-system]
+requires = ['setuptools>=40.8.0']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = "django-user-activation"
+version = "1.0.0"
+description = "django-user-activation is a Django app to manage user activation on registration."
+readme = "README.rst"
+keywords = [
+  "django",
+  "user",
+  "activation",
+]
+authors = [
+  { name = "Amr Elwetaidy", email = "amr.elwetaidy@gmail.com" },
+]
+requires-python = ">=3.10"
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: Web Environment",
+  "Framework :: Django",
+  "Framework :: Django :: 5.0",
+  "Framework :: Django :: 5.1",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Natural Language :: English",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Typing :: Typed",
+]
+dependencies = [
+  "django>=5.0",
+  "PyJWT>=2.9.0"
+]
+urls.Changelog = "https://github.com/Amr-elwetaidy/django-user-activation/blob/main/CHANGELOG.rst"
+urls.Repository = "https://github.com/Amr-elwetaidy/django-user-activation"
