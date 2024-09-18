@@ -1,1 +1,2 @@
+prune tests
 recursive-include django_user_activation/templates *
